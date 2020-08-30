@@ -13,6 +13,8 @@ public class EntryPoint {
 		intBox.set(11111);
 		update(stringBox);
 		System.out.println(stringBox.get() + intBox.get());
+		Container<String> c = stringBox;
+		c = new StringContainer();
 	}
 
 }
