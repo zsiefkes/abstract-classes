@@ -1,5 +1,5 @@
 
-public class Box<T> {
+public class Box<T> implements Container<T> {
 	private T value;
 	
 	public void set(T val) {
