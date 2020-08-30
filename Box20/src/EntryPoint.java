@@ -5,6 +5,10 @@ public class EntryPoint {
 		box.set("goodbye");
 	}
 	
+	public static void printContainer(Container<String> c) {
+		System.out.println(c.get());
+	}
+	
 	public static void main(String[] args) {
 		Box<String> stringBox = new Box<String>();
 		Box<Integer> intBox = new Box<Integer>();
@@ -14,7 +18,9 @@ public class EntryPoint {
 		update(stringBox);
 		System.out.println(stringBox.get() + intBox.get());
 		Container<String> c = stringBox;
+		printContainer(c);
 		c = new StringContainer();
+		printContainer(c);
 	}
 
 }
